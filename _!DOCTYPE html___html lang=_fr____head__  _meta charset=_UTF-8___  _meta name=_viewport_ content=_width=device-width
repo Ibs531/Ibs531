@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sites Pro – Création & Refonte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ----------- style.css intégré ----------- */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;color:#222;background:#fff;line-height:1.5}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea{font:inherit}
+    .container{width:90%;max-width:1100px;margin:auto}
+    .section{padding:80px 0}.bg-light{background:#f8f9fa}.bg-dark{background:#111;color:#fff}
+    .accent{color:#ff4d4d}
+    .btn{display:inline-block;background:#ff4d4d;color:#fff;padding:12px 28px;border-radius:4px;font-weight:600;transition:.3s}
+    .btn:hover{background:#e63c3c}
+    header{background:#111;color:#fff;text-align:center;padding:120px 20px 80px}
+    header h1{font-size:3rem;margin-bottom:.5rem}
+    header p{font-size:1.25rem;margin-bottom:2rem}
+    .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:#fff;border:1px solid #eaeaea;border-radius:8px;padding:2rem;box-shadow:0 4px 12px rgba(0,0,0,.05);transition:.3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+    .card h3{margin-bottom:.75rem}
+    .stats{display:flex;justify-content:space-around;flex-wrap:wrap;text-align:center;gap:2rem}
+    .stats div{font-size:1.1rem}
+    .stats strong{display:block;font-size:2rem;color:#ff4d4d}
+    .portfolio-item{position:relative;overflow:hidden;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+    .portfolio-item img{transition:.4s}
+    .portfolio-item:hover img{transform:scale(1.05)}
+    .portfolio-item span{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);color:#fff;padding:1rem;font-weight:600}
+    form{display:grid;gap:1rem;max-width:600px;margin:auto}
+    input,textarea{padding:14px;border:none;border-radius:4px}
+    textarea{resize:vertical;min-height:140px}
+    button{padding:14px;border:none;border-radius:4px;background:#ff4d4d;color:#fff;font-weight:600;cursor:pointer;transition:.3s}
+    button:hover{background:#e63c3c}
+    .small{text-align:center;margin-top:1rem;font-size:.875rem;opacity:.7}
+    .mail{margin-top:1rem;text-align:center;font-size:.9rem}
+    .mail a{color:#ff4d4d;font-weight:600}
+    footer{padding:30px 0;text-align:center;font-size:.875rem;background:#111;color:#ccc}
+    #year{font-weight:600}
+    @media(max-width:600px){
+      header h1{font-size:2.2rem}
+      .section{padding:60px 0}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sites <span class="accent">Pro</span></h1>
+      <p>Création & refonte de sites web pour TPE/PME</p>
+      <a href="#contact" class="btn">Devis gratuit</a>
+    </div>
+  </header>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Ce que je fais</h2>
+      <div class="grid">
+        <article class="card"><h3>Site Vitrine</h3><p>Présentation claire et rapide de votre activité, 100 % responsive.</p></article>
+        <article class="card"><h3>Site E-commerce</h3><p>Boutique en ligne clé en main avec paiement sécurisé.</p></article>
+        <article class="card"><h3>Refonte SEO</h3><p>Amélioration des performances et du référencement Google.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="chiffres" class="section bg-light">
+    <div class="container">
+      <h2>Résultats concrets</h2>
+      <div class="stats">
+        <div><strong>+35 %</strong> de leads en moyenne</div>
+        <div><strong>1,8 s</strong> temps de chargement</div>
+        <div><strong>100 %</strong> mobile-friendly</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Projets récents</h2>
+      <div class="grid">
+        <a href="#" class="portfolio-item"><img src="https://source.unsplash.com/600x400?office" alt="Projet 1"><span>Refonte – Cabinet d’avocats</span></a>
+        <a href="#" class="portfolio-item"><img src="https://source.unsplash.com/600x400?store" alt="Projet 2"><span>Boutique – Produits bio</span></a>
+        <a href="#" class="portfolio-item"><img src="https://source.unsplash.com/600x400?restaurant" alt="Projet 3"><span>Vitrine – Restaurant</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <h2>Parlons de votre projet</h2>
+      <form id="contactForm">
+        <input type="text" name="nom" placeholder="Nom de l’entreprise" required>
+        <input type="email" name="email" placeholder="E-mail pro" required>
+        <textarea name="message" placeholder="Décrivez brièvement votre besoin" required></textarea>
+        <button type="submit">Envoyer →</button>
+      </form>
+      <p class="small">Réponse sous 24 h ouvrées – Devis gratuit & sans engagement</p>
+      <p class="mail">Ou écrivez directement à <a href="mailto:hub.isang0905@gmail.com">hub.isang0905@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container"><p>© <span id="year"></span> Sites Pro – SIRET 123 456 789 00010</p></div>
+  </footer>
+
+  <script>
+    // ----------- script.js intégré -----------
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Merci ! Je vous réponds sous 24 h.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
